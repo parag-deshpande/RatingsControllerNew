@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RatingsControllerNew'
-  s.version          = '0.1.0'
+  s.version          = '0.1.3'
   s.summary          = 'Allows user to Rate/Review app on AppStore using RatingsControllerNew.'
 
 # This description is used to generate tags and improve search results.
