@@ -7,6 +7,7 @@
 //
 
 #import "PDViewController.h"
+#import "PDRatingsView.h"
 
 @interface PDViewController ()
 

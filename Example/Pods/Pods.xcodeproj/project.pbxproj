@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1A210401DF7B43A14FEE04C3019F7515 /* Pods-RatingsControllerNew_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9733F6E5903D4412D9BFC13FDDBD86 /* Pods-RatingsControllerNew_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42385AB9FF4F0F5FB66888CD81F8CF9A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B5B411D702672BDAB7379D9CE606E /* ReplaceMe.m */; };
 		5CA6A1A315FB621FB0796492EB7F0572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		6D402A1C6B034265BEF32BA4C16FA327 /* Pods-RatingsControllerNew_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C202AAFBD79EBFF28B462FC694B7B /* Pods-RatingsControllerNew_Example-dummy.m */; };
+		6FC47437498BA17FFC090980869D37B9 /* PDRatingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81323CE292C321C5F53FFFADFD9D3957 /* PDRatingsView.m */; };
+		70DA44BC2DDC94D100DA7A7344B4EF19 /* RatingsControllerNew-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96271CFF28258DA50BB507E3DF6054E9 /* RatingsControllerNew-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74ED9E755487872F9B4A7AE0FF7BE318 /* Pods-RatingsControllerNew_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C2458320146BC00BAFB8F956A551D1 /* Pods-RatingsControllerNew_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A9896F5CBFC63C31CAEEFDF5A4F48E0 /* PDRatingsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 811CF1A0F79456DCFD264519C06C0ECC /* PDRatingsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FED5CB60547B90E6263FC185C13D0CB /* Pods-RatingsControllerNew_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CC193A32E68282F1B37CE7B881829D /* Pods-RatingsControllerNew_Tests-dummy.m */; };
 		86699B2A2C29BC6A15B8250E2BB66F1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8A17FADC0B95B2B1A8C813C9EDF98641 /* RatingsControllerNew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 217560A50068D5E4B72081CFC611EC09 /* RatingsControllerNew-dummy.m */; };
 		9357A81E262FDA9B5F7C33776DB3ED1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		A2AB4BF6474B2836AA9914C758FE73D6 /* RatingsControllerNew-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96271CFF28258DA50BB507E3DF6054E9 /* RatingsControllerNew-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB9E46F29290DCABE56C59836EE9774E /* RatingsControllerNew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 217560A50068D5E4B72081CFC611EC09 /* RatingsControllerNew-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +37,11 @@
 		256F4CB458FA67C19FC91027C2C85FD0 /* Pods_RatingsControllerNew_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RatingsControllerNew_Tests.framework; path = "Pods-RatingsControllerNew_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39071054C00D5F45B170DFF06ABCF825 /* RatingsControllerNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RatingsControllerNew.framework; path = RatingsControllerNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8925C5309114E7EE71CE855A173911 /* RatingsControllerNew.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RatingsControllerNew.xcconfig; sourceTree = "<group>"; };
-		696B5B411D702672BDAB7379D9CE606E /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		6F79C7B614CE78F15C9335F41D14DFE2 /* Pods-RatingsControllerNew_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Tests-resources.sh"; sourceTree = "<group>"; };
 		7EDA53C3EF534A7E093351F50658803B /* RatingsControllerNew-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RatingsControllerNew-prefix.pch"; sourceTree = "<group>"; };
 		80E590EF27AAD35274E54FE173EBE71A /* Pods-RatingsControllerNew_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RatingsControllerNew_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		811CF1A0F79456DCFD264519C06C0ECC /* PDRatingsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDRatingsView.h; sourceTree = "<group>"; };
+		81323CE292C321C5F53FFFADFD9D3957 /* PDRatingsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDRatingsView.m; sourceTree = "<group>"; };
 		81EABD2E08CDE095089C657E667DDEE6 /* Pods-RatingsControllerNew_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8C9733F6E5903D4412D9BFC13FDDBD86 /* Pods-RatingsControllerNew_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RatingsControllerNew_Tests-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -100,10 +102,11 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		37D81E40808D495F3D00D447A772D62D /* Classes */ = {
+		4F7A90B5A34C6A5B10E26D1C69A0EDD3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				696B5B411D702672BDAB7379D9CE606E /* ReplaceMe.m */,
+				811CF1A0F79456DCFD264519C06C0ECC /* PDRatingsView.h */,
+				81323CE292C321C5F53FFFADFD9D3957 /* PDRatingsView.m */,
 			);
 			name = Classes;
 			path = Classes;
@@ -208,17 +211,17 @@
 		C25D79295E6D00C374398D355CBCCC7D /* RatingsControllerNew */ = {
 			isa = PBXGroup;
 			children = (
-				D4EE226C9B869F4BC60B7B0A775D70E3 /* RatingsControllerNew */,
+				DE63DB035DF9983EAE5FBFE9C27561CA /* RatingsControllerNew */,
 				AF448C37612C1E1CB49E0690539DF3F6 /* Support Files */,
 			);
 			name = RatingsControllerNew;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D4EE226C9B869F4BC60B7B0A775D70E3 /* RatingsControllerNew */ = {
+		DE63DB035DF9983EAE5FBFE9C27561CA /* RatingsControllerNew */ = {
 			isa = PBXGroup;
 			children = (
-				37D81E40808D495F3D00D447A772D62D /* Classes */,
+				4F7A90B5A34C6A5B10E26D1C69A0EDD3 /* Classes */,
 			);
 			name = RatingsControllerNew;
 			path = RatingsControllerNew;
@@ -227,11 +230,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12C158ECBD997143C614DFEAED20D7FC /* Headers */ = {
+		1151557A8216E122A7174380E3DF050E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AB4BF6474B2836AA9914C758FE73D6 /* RatingsControllerNew-umbrella.h in Headers */,
+				7A9896F5CBFC63C31CAEEFDF5A4F48E0 /* PDRatingsView.h in Headers */,
+				70DA44BC2DDC94D100DA7A7344B4EF19 /* RatingsControllerNew-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +297,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A3C66CD7FC93314251B9F942B47F8C /* Build configuration list for PBXNativeTarget "RatingsControllerNew" */;
 			buildPhases = (
-				90EC47E0F7C8B322B0F7B5C51CBFAC68 /* Sources */,
+				3270E6DE4F6074C73B64924CB400AC74 /* Sources */,
 				72203DCEA24B0C2D5336885B76931BA6 /* Frameworks */,
-				12C158ECBD997143C614DFEAED20D7FC /* Headers */,
+				1151557A8216E122A7174380E3DF050E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -335,20 +339,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3270E6DE4F6074C73B64924CB400AC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC47437498BA17FFC090980869D37B9 /* PDRatingsView.m in Sources */,
+				8A17FADC0B95B2B1A8C813C9EDF98641 /* RatingsControllerNew-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7564DC4ED7301BE2C416D304D819CC00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6D402A1C6B034265BEF32BA4C16FA327 /* Pods-RatingsControllerNew_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90EC47E0F7C8B322B0F7B5C51CBFAC68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB9E46F29290DCABE56C59836EE9774E /* RatingsControllerNew-dummy.m in Sources */,
-				42385AB9FF4F0F5FB66888CD81F8CF9A /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
