@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RatingsControllerNew'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RatingsControllerNew.'
+  s.summary          = 'Allows user to Rate/Review app on AppStore using RatingsControllerNew.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/RatingsControllerNew'
+s.description      = 'PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified. Steps - 1. import PDRatingsController
+2. Use following method where you want to initiate rating/review process.
+3. [PDRatingsController ratingsWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count onViewController:(UIViewController*)_viewController];
+4. Rest will taken care of by this class.'
+  s.homepage         = 'https://github.com/parag-deshpande/RatingsControllerNew'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'parag-deshpande' => 'parag.deshpande@klouddata.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/RatingsControllerNew.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/parag-deshpande/RatingsControllerNew.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
