@@ -158,8 +158,11 @@ static PDRatingsView *ratings;
         if([[UIDevice currentDevice].systemVersion floatValue] >= 10.0)
         {
         [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
+            if(success)
+            {
             [preferences setBool:YES forKey:kRemindMeLater];
             [preferences synchronize];
+            }
         }];
         }
         else
