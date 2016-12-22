@@ -7,6 +7,7 @@
 //
 
 #import "PDViewController.h"
+#import "PDRatingsView.h"
 
 
 @interface PDViewController ()
@@ -19,6 +20,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,4 +30,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)rateApp:(id)sender {
+    
+    [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:self];
+}
 @end

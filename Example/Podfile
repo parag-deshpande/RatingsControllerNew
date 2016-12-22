@@ -1,11 +1,6 @@
-use_frameworks!
+
 
 target 'RatingsControllerNew_Example' do
-  pod 'RatingsControllerNew', :path => '../'
+  pod 'RatingsControllerNew'
 
-  target 'RatingsControllerNew_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

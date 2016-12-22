@@ -7,109 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A210401DF7B43A14FEE04C3019F7515 /* Pods-RatingsControllerNew_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C9733F6E5903D4412D9BFC13FDDBD86 /* Pods-RatingsControllerNew_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CA6A1A315FB621FB0796492EB7F0572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6D402A1C6B034265BEF32BA4C16FA327 /* Pods-RatingsControllerNew_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C202AAFBD79EBFF28B462FC694B7B /* Pods-RatingsControllerNew_Example-dummy.m */; };
-		6FC47437498BA17FFC090980869D37B9 /* PDRatingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81323CE292C321C5F53FFFADFD9D3957 /* PDRatingsView.m */; };
-		70DA44BC2DDC94D100DA7A7344B4EF19 /* RatingsControllerNew-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96271CFF28258DA50BB507E3DF6054E9 /* RatingsControllerNew-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74ED9E755487872F9B4A7AE0FF7BE318 /* Pods-RatingsControllerNew_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C2458320146BC00BAFB8F956A551D1 /* Pods-RatingsControllerNew_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A9896F5CBFC63C31CAEEFDF5A4F48E0 /* PDRatingsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 811CF1A0F79456DCFD264519C06C0ECC /* PDRatingsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FED5CB60547B90E6263FC185C13D0CB /* Pods-RatingsControllerNew_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CC193A32E68282F1B37CE7B881829D /* Pods-RatingsControllerNew_Tests-dummy.m */; };
-		86699B2A2C29BC6A15B8250E2BB66F1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		8A17FADC0B95B2B1A8C813C9EDF98641 /* RatingsControllerNew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 217560A50068D5E4B72081CFC611EC09 /* RatingsControllerNew-dummy.m */; };
-		9357A81E262FDA9B5F7C33776DB3ED1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		227C704D8D24DD7092414AB1D18BFEB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		29BA9FDB5FF780FEC67F3BF21FD4B63F /* PDRatingsView.h in Headers */ = {isa = PBXBuildFile; fileRef = F94DB51EDA1FE86DAA5D2DB299164796 /* PDRatingsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D77727B892124F25499F5045A812FDE /* Pods-RatingsControllerNew_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC113765FF6789E53F32B5D377A5F660 /* Pods-RatingsControllerNew_Example-dummy.m */; };
+		43E8D447D37ED4B9346291C0CF9F283E /* RatingsControllerNew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04B5F5575BDA726A3B77C9DF9F3768 /* RatingsControllerNew-dummy.m */; };
+		A61DB603064E5D8B7CBBDEDE78ED601E /* PDRatingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D955F80766C40B87297F675557CCF140 /* PDRatingsView.m */; };
+		B5AE98F3D42F2494AA69AF030A91EAFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0E0BF659F7A798E2BAF93A170A4CF9F0 /* PBXContainerItemProxy */ = {
+		54301F720A4E3ACA6791863293C99780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FE642E53925346E4CDD8E1294893BF4F;
+			remoteGlobalIDString = 54DC412973E7DD57F2C67F47C3A1A1B3;
 			remoteInfo = RatingsControllerNew;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1745C567C10B74998A8618AC8494CFDB /* Pods-RatingsControllerNew_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RatingsControllerNew_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		217560A50068D5E4B72081CFC611EC09 /* RatingsControllerNew-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RatingsControllerNew-dummy.m"; sourceTree = "<group>"; };
-		21D6E559342209753E713A412615A223 /* Pods-RatingsControllerNew_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RatingsControllerNew_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		256F4CB458FA67C19FC91027C2C85FD0 /* Pods_RatingsControllerNew_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RatingsControllerNew_Tests.framework; path = "Pods-RatingsControllerNew_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		39071054C00D5F45B170DFF06ABCF825 /* RatingsControllerNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RatingsControllerNew.framework; path = RatingsControllerNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C8925C5309114E7EE71CE855A173911 /* RatingsControllerNew.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RatingsControllerNew.xcconfig; sourceTree = "<group>"; };
-		6F79C7B614CE78F15C9335F41D14DFE2 /* Pods-RatingsControllerNew_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Tests-resources.sh"; sourceTree = "<group>"; };
-		7EDA53C3EF534A7E093351F50658803B /* RatingsControllerNew-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RatingsControllerNew-prefix.pch"; sourceTree = "<group>"; };
-		80E590EF27AAD35274E54FE173EBE71A /* Pods-RatingsControllerNew_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RatingsControllerNew_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		811CF1A0F79456DCFD264519C06C0ECC /* PDRatingsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PDRatingsView.h; sourceTree = "<group>"; };
-		81323CE292C321C5F53FFFADFD9D3957 /* PDRatingsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PDRatingsView.m; sourceTree = "<group>"; };
-		81EABD2E08CDE095089C657E667DDEE6 /* Pods-RatingsControllerNew_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8C9733F6E5903D4412D9BFC13FDDBD86 /* Pods-RatingsControllerNew_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RatingsControllerNew_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0E96A4CF6BA2847E5DFDB86211B9F584 /* libRatingsControllerNew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRatingsControllerNew.a; path = libRatingsControllerNew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		251323B88D263822B924369102B029EC /* Pods-RatingsControllerNew_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RatingsControllerNew_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2515A52C9C6CF061E6CEB70E454112CA /* Pods-RatingsControllerNew_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RatingsControllerNew_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C3B2597001363C3ABAEA7F9BE129AA0 /* RatingsControllerNew-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RatingsControllerNew-prefix.pch"; sourceTree = "<group>"; };
+		339B9457B23CE5991326E418CBE291A2 /* RatingsControllerNew.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RatingsControllerNew.xcconfig; sourceTree = "<group>"; };
+		5C04B5F5575BDA726A3B77C9DF9F3768 /* RatingsControllerNew-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RatingsControllerNew-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96271CFF28258DA50BB507E3DF6054E9 /* RatingsControllerNew-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RatingsControllerNew-umbrella.h"; sourceTree = "<group>"; };
-		98C2458320146BC00BAFB8F956A551D1 /* Pods-RatingsControllerNew_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RatingsControllerNew_Example-umbrella.h"; sourceTree = "<group>"; };
-		98D29CA38940768F7813FA367313F98D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A03539CA14D28FA038FE117C1BD3B22A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1C3F5516AE29F2CE42BE12F0D170329 /* Pods-RatingsControllerNew_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RatingsControllerNew_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2CC193A32E68282F1B37CE7B881829D /* Pods-RatingsControllerNew_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RatingsControllerNew_Tests-dummy.m"; sourceTree = "<group>"; };
-		AAF158D8C14B4C3A70FC64E177FF7D76 /* Pods-RatingsControllerNew_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AE6AD925395BE7590D5E1FA6C804120C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4D8D5D8FB372A71AF6495CA9B212DE8 /* Pods-RatingsControllerNew_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RatingsControllerNew_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C6DEC9EA64C08C4B764707E559C4F770 /* Pods-RatingsControllerNew_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Example-resources.sh"; sourceTree = "<group>"; };
-		C9057ABB7B301752F2081227FB6FD784 /* Pods-RatingsControllerNew_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RatingsControllerNew_Example.modulemap"; sourceTree = "<group>"; };
+		B9B5DD0B19FA197AD74B588D6103D1E7 /* Pods-RatingsControllerNew_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BC113765FF6789E53F32B5D377A5F660 /* Pods-RatingsControllerNew_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RatingsControllerNew_Example-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D0990595E1112EA7BBF319024E567E56 /* Pods-RatingsControllerNew_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RatingsControllerNew_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D38C202AAFBD79EBFF28B462FC694B7B /* Pods-RatingsControllerNew_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RatingsControllerNew_Example-dummy.m"; sourceTree = "<group>"; };
-		D881B0FCBF721E326404DF5FB6FBA21F /* Pods-RatingsControllerNew_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RatingsControllerNew_Tests.modulemap"; sourceTree = "<group>"; };
-		DB175B1D7F172ACE7F9848464096A813 /* Pods_RatingsControllerNew_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RatingsControllerNew_Example.framework; path = "Pods-RatingsControllerNew_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF0C001B5A8694236025A9B4B1835A3B /* Pods-RatingsControllerNew_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RatingsControllerNew_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EA4F520C7D6F2AC183567CBD2294400E /* RatingsControllerNew.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RatingsControllerNew.modulemap; sourceTree = "<group>"; };
-		EF67FA8BB4E66C71D78127F05EE4E3F6 /* Pods-RatingsControllerNew_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RatingsControllerNew_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D30FD2807F32807A062846ED462E066D /* Pods-RatingsControllerNew_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RatingsControllerNew_Example-resources.sh"; sourceTree = "<group>"; };
+		D485D6D0EEC72771C1D98AD8F616179E /* Pods-RatingsControllerNew_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RatingsControllerNew_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D955F80766C40B87297F675557CCF140 /* PDRatingsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PDRatingsView.m; path = RatingsControllerNew/Classes/PDRatingsView.m; sourceTree = "<group>"; };
+		DE040B25040B712453038EDB7186418A /* libPods-RatingsControllerNew_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RatingsControllerNew_Example.a"; path = "libPods-RatingsControllerNew_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E613C2E187964EEB3A75C5A4F584AEC4 /* Pods-RatingsControllerNew_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RatingsControllerNew_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F94DB51EDA1FE86DAA5D2DB299164796 /* PDRatingsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PDRatingsView.h; path = RatingsControllerNew/Classes/PDRatingsView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		72203DCEA24B0C2D5336885B76931BA6 /* Frameworks */ = {
+		3BB3A78B344556B462AADBF9BE0D01F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86699B2A2C29BC6A15B8250E2BB66F1B /* Foundation.framework in Frameworks */,
+				B5AE98F3D42F2494AA69AF030A91EAFF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		792BB7F09749155499C99384EF627082 /* Frameworks */ = {
+		AD6EFB33AD4141827DE9AC448F1A1F12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9357A81E262FDA9B5F7C33776DB3ED1C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C46787B2AE597B590CD4CAB00D691E03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CA6A1A315FB621FB0796492EB7F0572 /* Foundation.framework in Frameworks */,
+				227C704D8D24DD7092414AB1D18BFEB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		362BEEAE2C146904E7236F93F80827BE /* Development Pods */ = {
+		02143B4A19715BC4718B489459824F82 /* RatingsControllerNew */ = {
 			isa = PBXGroup;
 			children = (
-				C25D79295E6D00C374398D355CBCCC7D /* RatingsControllerNew */,
+				F94DB51EDA1FE86DAA5D2DB299164796 /* PDRatingsView.h */,
+				D955F80766C40B87297F675557CCF140 /* PDRatingsView.m */,
+				68C785EF0D8C71F32BF4D3C68770FBB7 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = RatingsControllerNew;
+			path = RatingsControllerNew;
 			sourceTree = "<group>";
 		};
-		4F7A90B5A34C6A5B10E26D1C69A0EDD3 /* Classes */ = {
+		494DAE1E6A0DA0627EC51DBB280BFF53 /* Pods-RatingsControllerNew_Example */ = {
 			isa = PBXGroup;
 			children = (
-				811CF1A0F79456DCFD264519C06C0ECC /* PDRatingsView.h */,
-				81323CE292C321C5F53FFFADFD9D3957 /* PDRatingsView.m */,
+				2515A52C9C6CF061E6CEB70E454112CA /* Pods-RatingsControllerNew_Example-acknowledgements.markdown */,
+				E613C2E187964EEB3A75C5A4F584AEC4 /* Pods-RatingsControllerNew_Example-acknowledgements.plist */,
+				BC113765FF6789E53F32B5D377A5F660 /* Pods-RatingsControllerNew_Example-dummy.m */,
+				B9B5DD0B19FA197AD74B588D6103D1E7 /* Pods-RatingsControllerNew_Example-frameworks.sh */,
+				D30FD2807F32807A062846ED462E066D /* Pods-RatingsControllerNew_Example-resources.sh */,
+				251323B88D263822B924369102B029EC /* Pods-RatingsControllerNew_Example.debug.xcconfig */,
+				D485D6D0EEC72771C1D98AD8F616179E /* Pods-RatingsControllerNew_Example.release.xcconfig */,
 			);
-			name = Classes;
-			path = Classes;
+			name = "Pods-RatingsControllerNew_Example";
+			path = "Target Support Files/Pods-RatingsControllerNew_Example";
+			sourceTree = "<group>";
+		};
+		4D19CB212362E750B8366F70FD27FC16 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				494DAE1E6A0DA0627EC51DBB280BFF53 /* Pods-RatingsControllerNew_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		528D5D7847CBCFF0C601466CA2F0F8D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02143B4A19715BC4718B489459824F82 /* RatingsControllerNew */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68C785EF0D8C71F32BF4D3C68770FBB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				339B9457B23CE5991326E418CBE291A2 /* RatingsControllerNew.xcconfig */,
+				5C04B5F5575BDA726A3B77C9DF9F3768 /* RatingsControllerNew-dummy.m */,
+				2C3B2597001363C3ABAEA7F9BE129AA0 /* RatingsControllerNew-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RatingsControllerNew";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -124,80 +129,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				362BEEAE2C146904E7236F93F80827BE /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AAF6D40555436ABD4817C1B2CD7D444E /* Products */,
-				A72BA8E8B5A283ADE1876C5EB40962BE /* Targets Support Files */,
+				528D5D7847CBCFF0C601466CA2F0F8D1 /* Pods */,
+				DBCB8CECB7447043AD7D8B39A154CB37 /* Products */,
+				4D19CB212362E750B8366F70FD27FC16 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		95E0B1B53D39880BA8ECD89EE986AFD8 /* Pods-RatingsControllerNew_Example */ = {
-			isa = PBXGroup;
-			children = (
-				AE6AD925395BE7590D5E1FA6C804120C /* Info.plist */,
-				C9057ABB7B301752F2081227FB6FD784 /* Pods-RatingsControllerNew_Example.modulemap */,
-				EF67FA8BB4E66C71D78127F05EE4E3F6 /* Pods-RatingsControllerNew_Example-acknowledgements.markdown */,
-				A1C3F5516AE29F2CE42BE12F0D170329 /* Pods-RatingsControllerNew_Example-acknowledgements.plist */,
-				D38C202AAFBD79EBFF28B462FC694B7B /* Pods-RatingsControllerNew_Example-dummy.m */,
-				AAF158D8C14B4C3A70FC64E177FF7D76 /* Pods-RatingsControllerNew_Example-frameworks.sh */,
-				C6DEC9EA64C08C4B764707E559C4F770 /* Pods-RatingsControllerNew_Example-resources.sh */,
-				98C2458320146BC00BAFB8F956A551D1 /* Pods-RatingsControllerNew_Example-umbrella.h */,
-				1745C567C10B74998A8618AC8494CFDB /* Pods-RatingsControllerNew_Example.debug.xcconfig */,
-				DF0C001B5A8694236025A9B4B1835A3B /* Pods-RatingsControllerNew_Example.release.xcconfig */,
-			);
-			name = "Pods-RatingsControllerNew_Example";
-			path = "Target Support Files/Pods-RatingsControllerNew_Example";
-			sourceTree = "<group>";
-		};
-		9DA97B6628FA62709FB6346CF5C33DC5 /* Pods-RatingsControllerNew_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A03539CA14D28FA038FE117C1BD3B22A /* Info.plist */,
-				D881B0FCBF721E326404DF5FB6FBA21F /* Pods-RatingsControllerNew_Tests.modulemap */,
-				80E590EF27AAD35274E54FE173EBE71A /* Pods-RatingsControllerNew_Tests-acknowledgements.markdown */,
-				D0990595E1112EA7BBF319024E567E56 /* Pods-RatingsControllerNew_Tests-acknowledgements.plist */,
-				A2CC193A32E68282F1B37CE7B881829D /* Pods-RatingsControllerNew_Tests-dummy.m */,
-				81EABD2E08CDE095089C657E667DDEE6 /* Pods-RatingsControllerNew_Tests-frameworks.sh */,
-				6F79C7B614CE78F15C9335F41D14DFE2 /* Pods-RatingsControllerNew_Tests-resources.sh */,
-				8C9733F6E5903D4412D9BFC13FDDBD86 /* Pods-RatingsControllerNew_Tests-umbrella.h */,
-				B4D8D5D8FB372A71AF6495CA9B212DE8 /* Pods-RatingsControllerNew_Tests.debug.xcconfig */,
-				21D6E559342209753E713A412615A223 /* Pods-RatingsControllerNew_Tests.release.xcconfig */,
-			);
-			name = "Pods-RatingsControllerNew_Tests";
-			path = "Target Support Files/Pods-RatingsControllerNew_Tests";
-			sourceTree = "<group>";
-		};
-		A72BA8E8B5A283ADE1876C5EB40962BE /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				95E0B1B53D39880BA8ECD89EE986AFD8 /* Pods-RatingsControllerNew_Example */,
-				9DA97B6628FA62709FB6346CF5C33DC5 /* Pods-RatingsControllerNew_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AAF6D40555436ABD4817C1B2CD7D444E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DB175B1D7F172ACE7F9848464096A813 /* Pods_RatingsControllerNew_Example.framework */,
-				256F4CB458FA67C19FC91027C2C85FD0 /* Pods_RatingsControllerNew_Tests.framework */,
-				39071054C00D5F45B170DFF06ABCF825 /* RatingsControllerNew.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AF448C37612C1E1CB49E0690539DF3F6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				98D29CA38940768F7813FA367313F98D /* Info.plist */,
-				EA4F520C7D6F2AC183567CBD2294400E /* RatingsControllerNew.modulemap */,
-				5C8925C5309114E7EE71CE855A173911 /* RatingsControllerNew.xcconfig */,
-				217560A50068D5E4B72081CFC611EC09 /* RatingsControllerNew-dummy.m */,
-				7EDA53C3EF534A7E093351F50658803B /* RatingsControllerNew-prefix.pch */,
-				96271CFF28258DA50BB507E3DF6054E9 /* RatingsControllerNew-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RatingsControllerNew";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -208,98 +144,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C25D79295E6D00C374398D355CBCCC7D /* RatingsControllerNew */ = {
+		DBCB8CECB7447043AD7D8B39A154CB37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE63DB035DF9983EAE5FBFE9C27561CA /* RatingsControllerNew */,
-				AF448C37612C1E1CB49E0690539DF3F6 /* Support Files */,
+				DE040B25040B712453038EDB7186418A /* libPods-RatingsControllerNew_Example.a */,
+				0E96A4CF6BA2847E5DFDB86211B9F584 /* libRatingsControllerNew.a */,
 			);
-			name = RatingsControllerNew;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		DE63DB035DF9983EAE5FBFE9C27561CA /* RatingsControllerNew */ = {
-			isa = PBXGroup;
-			children = (
-				4F7A90B5A34C6A5B10E26D1C69A0EDD3 /* Classes */,
-			);
-			name = RatingsControllerNew;
-			path = RatingsControllerNew;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1151557A8216E122A7174380E3DF050E /* Headers */ = {
+		C56C29A9F302A287D77F4D45773FD661 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A9896F5CBFC63C31CAEEFDF5A4F48E0 /* PDRatingsView.h in Headers */,
-				70DA44BC2DDC94D100DA7A7344B4EF19 /* RatingsControllerNew-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F016A4594881B79369B45583ADBCB5D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A210401DF7B43A14FEE04C3019F7515 /* Pods-RatingsControllerNew_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD8B5BE3F746047DA43407F835EA803F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74ED9E755487872F9B4A7AE0FF7BE318 /* Pods-RatingsControllerNew_Example-umbrella.h in Headers */,
+				29BA9FDB5FF780FEC67F3BF21FD4B63F /* PDRatingsView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23C07D906FB7D008C404390B238EF5CC /* Pods-RatingsControllerNew_Tests */ = {
+		241B6361B7F7BCEEC0CDE77DAA529417 /* Pods-RatingsControllerNew_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC6990802F2D45415C787D283DAB6302 /* Build configuration list for PBXNativeTarget "Pods-RatingsControllerNew_Tests" */;
+			buildConfigurationList = 2C314487C720F0E8E933074EAF13C0B4 /* Build configuration list for PBXNativeTarget "Pods-RatingsControllerNew_Example" */;
 			buildPhases = (
-				C7BE21687868EDD430C40008E8A777D5 /* Sources */,
-				792BB7F09749155499C99384EF627082 /* Frameworks */,
-				8F016A4594881B79369B45583ADBCB5D /* Headers */,
+				D4A7C0795BA42983A412D1BD6CEDDE1A /* Sources */,
+				AD6EFB33AD4141827DE9AC448F1A1F12 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-RatingsControllerNew_Tests";
-			productName = "Pods-RatingsControllerNew_Tests";
-			productReference = 256F4CB458FA67C19FC91027C2C85FD0 /* Pods_RatingsControllerNew_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		32695B976F963C5931B6C21CFC08172E /* Pods-RatingsControllerNew_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28D72721E877E2C91A9313EC24C78845 /* Build configuration list for PBXNativeTarget "Pods-RatingsControllerNew_Example" */;
-			buildPhases = (
-				7564DC4ED7301BE2C416D304D819CC00 /* Sources */,
-				C46787B2AE597B590CD4CAB00D691E03 /* Frameworks */,
-				AD8B5BE3F746047DA43407F835EA803F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53852518DC28FD03F5D9F1A6964914E0 /* PBXTargetDependency */,
+				4B84FF1035ABE64BFD9AD310166CFCA2 /* PBXTargetDependency */,
 			);
 			name = "Pods-RatingsControllerNew_Example";
 			productName = "Pods-RatingsControllerNew_Example";
-			productReference = DB175B1D7F172ACE7F9848464096A813 /* Pods_RatingsControllerNew_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = DE040B25040B712453038EDB7186418A /* libPods-RatingsControllerNew_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		FE642E53925346E4CDD8E1294893BF4F /* RatingsControllerNew */ = {
+		54DC412973E7DD57F2C67F47C3A1A1B3 /* RatingsControllerNew */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16A3C66CD7FC93314251B9F942B47F8C /* Build configuration list for PBXNativeTarget "RatingsControllerNew" */;
+			buildConfigurationList = 425B073B158DEFA83C063B21DC3D3C33 /* Build configuration list for PBXNativeTarget "RatingsControllerNew" */;
 			buildPhases = (
-				3270E6DE4F6074C73B64924CB400AC74 /* Sources */,
-				72203DCEA24B0C2D5336885B76931BA6 /* Frameworks */,
-				1151557A8216E122A7174380E3DF050E /* Headers */,
+				E7CD6C1B29ACADA91A5891F8A9EB2E17 /* Sources */,
+				3BB3A78B344556B462AADBF9BE0D01F5 /* Frameworks */,
+				C56C29A9F302A287D77F4D45773FD661 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -307,8 +198,8 @@
 			);
 			name = RatingsControllerNew;
 			productName = RatingsControllerNew;
-			productReference = 39071054C00D5F45B170DFF06ABCF825 /* RatingsControllerNew.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 0E96A4CF6BA2847E5DFDB86211B9F584 /* libRatingsControllerNew.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -327,155 +218,114 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AAF6D40555436ABD4817C1B2CD7D444E /* Products */;
+			productRefGroup = DBCB8CECB7447043AD7D8B39A154CB37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32695B976F963C5931B6C21CFC08172E /* Pods-RatingsControllerNew_Example */,
-				23C07D906FB7D008C404390B238EF5CC /* Pods-RatingsControllerNew_Tests */,
-				FE642E53925346E4CDD8E1294893BF4F /* RatingsControllerNew */,
+				241B6361B7F7BCEEC0CDE77DAA529417 /* Pods-RatingsControllerNew_Example */,
+				54DC412973E7DD57F2C67F47C3A1A1B3 /* RatingsControllerNew */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3270E6DE4F6074C73B64924CB400AC74 /* Sources */ = {
+		D4A7C0795BA42983A412D1BD6CEDDE1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FC47437498BA17FFC090980869D37B9 /* PDRatingsView.m in Sources */,
-				8A17FADC0B95B2B1A8C813C9EDF98641 /* RatingsControllerNew-dummy.m in Sources */,
+				3D77727B892124F25499F5045A812FDE /* Pods-RatingsControllerNew_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7564DC4ED7301BE2C416D304D819CC00 /* Sources */ = {
+		E7CD6C1B29ACADA91A5891F8A9EB2E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D402A1C6B034265BEF32BA4C16FA327 /* Pods-RatingsControllerNew_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7BE21687868EDD430C40008E8A777D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FED5CB60547B90E6263FC185C13D0CB /* Pods-RatingsControllerNew_Tests-dummy.m in Sources */,
+				A61DB603064E5D8B7CBBDEDE78ED601E /* PDRatingsView.m in Sources */,
+				43E8D447D37ED4B9346291C0CF9F283E /* RatingsControllerNew-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		53852518DC28FD03F5D9F1A6964914E0 /* PBXTargetDependency */ = {
+		4B84FF1035ABE64BFD9AD310166CFCA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RatingsControllerNew;
-			target = FE642E53925346E4CDD8E1294893BF4F /* RatingsControllerNew */;
-			targetProxy = 0E0BF659F7A798E2BAF93A170A4CF9F0 /* PBXContainerItemProxy */;
+			target = 54DC412973E7DD57F2C67F47C3A1A1B3 /* RatingsControllerNew */;
+			targetProxy = 54301F720A4E3ACA6791863293C99780 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		53C8DA6602FC766D049FAB49C877E20C /* Debug */ = {
+		1A5BC2187196766478087F95FB3DE614 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1745C567C10B74998A8618AC8494CFDB /* Pods-RatingsControllerNew_Example.debug.xcconfig */;
+			baseConfigurationReference = D485D6D0EEC72771C1D98AD8F616179E /* Pods-RatingsControllerNew_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RatingsControllerNew_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RatingsControllerNew_Example/Pods-RatingsControllerNew_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		419805F2AE646FB646F81516CC919C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339B9457B23CE5991326E418CBE291A2 /* RatingsControllerNew.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RatingsControllerNew/RatingsControllerNew-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4DFDBC8AB02C297ED6C1A28B964502B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251323B88D263822B924369102B029EC /* Pods-RatingsControllerNew_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RatingsControllerNew_Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		60F5F8233609B65173A0698FE72EB23D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C8925C5309114E7EE71CE855A173911 /* RatingsControllerNew.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RatingsControllerNew/RatingsControllerNew-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RatingsControllerNew/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RatingsControllerNew/RatingsControllerNew.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RatingsControllerNew;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		76D65DAB4EED2F442F7D3E4442C6FBFA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21D6E559342209753E713A412615A223 /* Pods-RatingsControllerNew_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RatingsControllerNew_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RatingsControllerNew_Tests/Pods-RatingsControllerNew_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RatingsControllerNew_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -516,41 +366,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		9D3786650CE5B57F29B91E02CC21C9F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4D8D5D8FB372A71AF6495CA9B212DE8 /* Pods-RatingsControllerNew_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RatingsControllerNew_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RatingsControllerNew_Tests/Pods-RatingsControllerNew_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RatingsControllerNew_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -596,89 +411,37 @@
 			};
 			name = Debug;
 		};
-		A9C07123B8F29807CB337ADC80510F61 /* Debug */ = {
+		DB3E9B874985ACDEC72D714BC1CB79F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C8925C5309114E7EE71CE855A173911 /* RatingsControllerNew.xcconfig */;
+			baseConfigurationReference = 339B9457B23CE5991326E418CBE291A2 /* RatingsControllerNew.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/RatingsControllerNew/RatingsControllerNew-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RatingsControllerNew/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RatingsControllerNew/RatingsControllerNew.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RatingsControllerNew;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D7F25602BBA4294A4155F8FD3D7D253F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF0C001B5A8694236025A9B4B1835A3B /* Pods-RatingsControllerNew_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RatingsControllerNew_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RatingsControllerNew_Example/Pods-RatingsControllerNew_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RatingsControllerNew_Example;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16A3C66CD7FC93314251B9F942B47F8C /* Build configuration list for PBXNativeTarget "RatingsControllerNew" */ = {
+		2C314487C720F0E8E933074EAF13C0B4 /* Build configuration list for PBXNativeTarget "Pods-RatingsControllerNew_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9C07123B8F29807CB337ADC80510F61 /* Debug */,
-				60F5F8233609B65173A0698FE72EB23D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28D72721E877E2C91A9313EC24C78845 /* Build configuration list for PBXNativeTarget "Pods-RatingsControllerNew_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53C8DA6602FC766D049FAB49C877E20C /* Debug */,
-				D7F25602BBA4294A4155F8FD3D7D253F /* Release */,
+				4DFDBC8AB02C297ED6C1A28B964502B9 /* Debug */,
+				1A5BC2187196766478087F95FB3DE614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -692,11 +455,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC6990802F2D45415C787D283DAB6302 /* Build configuration list for PBXNativeTarget "Pods-RatingsControllerNew_Tests" */ = {
+		425B073B158DEFA83C063B21DC3D3C33 /* Build configuration list for PBXNativeTarget "RatingsControllerNew" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D3786650CE5B57F29B91E02CC21C9F5 /* Debug */,
-				76D65DAB4EED2F442F7D3E4442C6FBFA /* Release */,
+				419805F2AE646FB646F81516CC919C68 /* Debug */,
+				DB3E9B874985ACDEC72D714BC1CB79F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

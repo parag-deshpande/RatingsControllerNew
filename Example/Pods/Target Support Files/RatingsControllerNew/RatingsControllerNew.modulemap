@@ -1,6 +1,0 @@
-framework module RatingsControllerNew {
-  umbrella header "RatingsControllerNew-umbrella.h"
-
-  export *
-  module * { export * }
-}

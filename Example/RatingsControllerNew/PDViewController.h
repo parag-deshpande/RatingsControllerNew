@@ -9,5 +9,6 @@
 @import UIKit;
 
 @interface PDViewController : UIViewController
+- (IBAction)rateApp:(id)sender;
 
 @end
