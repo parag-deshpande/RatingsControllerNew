@@ -20,9 +20,10 @@ This has features -
     -(void)setAlertTitle2:(NSString*)alertTitle
 
 - Remind Me Later option is available
-    -set days after which user will be promted with App rate/review
-    to set hours use mutlipler - 1/24*<number_of_hours>
-    to set days set <number_of_days>
+    - set days after which user will be promted with App rate/review
+     - to set hours use mutlipler - 1/24*<number_of_hours>
+     - to set days set <number_of_days>
+
    Reminder promts will apear when time set reached and app is lauched 
 
 
