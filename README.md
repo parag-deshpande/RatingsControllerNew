@@ -39,8 +39,9 @@ pod "RatingsControllerNew"
 ```
 
 ##Usage 
-PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified. Default is limit is 2 i.e user must use app at least 2 times to rate.
-Steps -
+PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified. Default is limit is 2 i.e user must use app at least 2 times to rate
+
+    #Steps:
 1 import PDRatingsView
 
 2 Use following method in AppDelegate's didBecomeActiveMethod  to initiate rating/review process.
