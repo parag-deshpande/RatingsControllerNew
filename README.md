@@ -15,6 +15,7 @@ PDRatingsController is used to Rate the App in Appstore. Simple to integrate jus
 Features :
 - Custom Alert messages 
     - set promt titles and messages using method
+
         #(void)setAlertMessage1:(NSString*)alertMessage
         #(void)setAlertMessage2:(NSString*)alertMessage
         #(void)setAlertTitle1:(NSString*)alertTitle
