@@ -16,10 +16,10 @@ Features :
 - Custom Alert messages 
     - set promt titles and messages using method
 
-        #(void)setAlertMessage1:(NSString*)alertMessage
-        #(void)setAlertMessage2:(NSString*)alertMessage
-        #(void)setAlertTitle1:(NSString*)alertTitle
-        #(void)setAlertTitle2:(NSString*)alertTitle
+            #(void)setAlertMessage1:(NSString*)alertMessage
+            #(void)setAlertMessage2:(NSString*)alertMessage
+            #(void)setAlertTitle1:(NSString*)alertTitle
+            #(void)setAlertTitle2:(NSString*)alertTitle
 
 - Remind Me Later option is available
     - set days after which user will be promted with App rate/review
