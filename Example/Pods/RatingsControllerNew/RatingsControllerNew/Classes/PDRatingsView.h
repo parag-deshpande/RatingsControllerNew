@@ -12,6 +12,7 @@ static NSString *const iOS7AppStoreURLFormat = @"app/id=";
 static NSString *const iOSAppStoreURLFormat = @"WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=";
 
 
+
 typedef enum : NSUInteger {
     PDRatingsSelectedToRate,
     PDRatingsSelectedToRemindLater,
