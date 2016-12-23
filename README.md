@@ -9,6 +9,9 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Introduction
+PDRatingsController can be used to Rate the App. It is available after iOS 8.0.
+
 ## Requirements
 
 ## Installation
@@ -20,14 +23,18 @@ it, simply add the following line to your Podfile:
 pod "RatingsControllerNew"
 ```
 
-##Usage : 
+##Usage 
 PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified.
 Steps -
 1. import PDRatingsView
-2. Use following method where you want to initiate rating/review process.
--- [[PDRatingsView ratings]initilizeWithAppId:@"12345" appName:@"abc" countAppUsed:2];
+
+2. Use following method in AppDelegate's didBecomeActiveMethod  to initiate rating/review process.
+
+-- [[PDRatingsView ratings]initilizeWithAppId:<APP_ID> appName:<APP_NAME> countAppUsed:<COUNT_TO_ALLOW_USER_RATE_APP> remindAfterDays:<NUMBER_OF_DAYS>];
+
 3. Call on Button tap /action event / where user want to display rate promts
--- [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:self];'
+
+-- [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:<ViewController_To_Display_Promts>];
 
 
 ## Author
