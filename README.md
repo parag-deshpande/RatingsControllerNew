@@ -14,15 +14,15 @@ PDRatingsController is used to Rate the App in Appstore. Simple to integrate jus
 This has features -
 - Custom Alert messages 
     - set promt title's and messages using method
-    -(void)setAlertMessage1:(NSString*)alertMessage
-    -(void)setAlertMessage2:(NSString*)alertMessage
-    -(void)setAlertTitle1:(NSString*)alertTitle
-    -(void)setAlertTitle2:(NSString*)alertTitle
+    - (void)setAlertMessage1:(NSString*)alertMessage
+    - (void)setAlertMessage2:(NSString*)alertMessage
+    - (void)setAlertTitle1:(NSString*)alertTitle
+    - (void)setAlertTitle2:(NSString*)alertTitle
 
 - Remind Me Later option is available
     - set days after which user will be promted with App rate/review
-     - to set hours use mutlipler - 1/24*<number_of_hours>
-     - to set days set <number_of_days>
+     - to set hours use mutlipler - 1/24*(number_of_hours)
+     - to set days set (number_of_days)
 
    Reminder promts will apear when time set reached and app is lauched 
 
