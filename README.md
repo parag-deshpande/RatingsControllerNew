@@ -11,7 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Introduction
 PDRatingsController is used to Rate the App in Appstore. Simple to integrate just add pod in your pod file, install pods and use methods described in usage section.
-This has features -
+
+Features :
 - Custom Alert messages 
     - set promt titles and messages using method
     - (void)setAlertMessage1:(NSString*)alertMessage
