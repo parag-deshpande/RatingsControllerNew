@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod "RatingsControllerNew"
 ```
 
-Usage : 
+##Usage : 
 PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified.
 Steps -
 1. import PDRatingsView
