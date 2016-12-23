@@ -16,7 +16,7 @@ s.description      = 'PDRatingsController is singleton class allows user to rate
     Steps -
     1. import PDRatingsView
     2. Use following method where you want to initiate rating/review process.
-      -- [[PDRatingsView ratings]initilizeWithAppId:@"12345" appName:@"abc" countAppUsed:2];
+-- [[PDRatingsView ratings]initialiseWithAppId:@"12345" appName:@"abc" countAppUsed:2 remindAfter:0.5];
     3. Call on Button tap /action event / where user want to display rate promts
       -- [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:self];'
 
