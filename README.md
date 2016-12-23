@@ -21,10 +21,10 @@ This has features -
 
 - Remind Me Later option is available
     - set days after which user will be promted with App rate/review
-     - to set hours use mutlipler - 1/24*(number_of_hours)
+     - to set hours use mutliplier - 1/24*(number_of_hours)
      - to set days set (number_of_days)
 
-   Reminder promts will apear when time set reached and app is lauched 
+   Reminder promt will apear when time set reached and app is launched again afterwards
 
 
 ## Requirements
