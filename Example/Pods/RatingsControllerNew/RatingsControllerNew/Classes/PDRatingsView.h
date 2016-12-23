@@ -48,7 +48,6 @@ typedef enum : NSUInteger {
  * @param count NSInteger - Max count after which user can rate the app
  * @return void returns void
  */
-
 -(void)initilizeWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count;
 
 /**
@@ -83,6 +82,7 @@ typedef enum : NSUInteger {
  * @return void returns void
  */
 -(void)setAlertTitle1:(NSString*)alertTitle;
+
 
 
 /**
