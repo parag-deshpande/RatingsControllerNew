@@ -1,11 +1,11 @@
 PODS:
-  - RatingsControllerNew (0.1.6)
+  - RatingsControllerNew (0.1.9)
 
 DEPENDENCIES:
   - RatingsControllerNew
 
 SPEC CHECKSUMS:
-  RatingsControllerNew: 84ed8dfcb405e791bf3f52f04b4947b91031b4c2
+  RatingsControllerNew: e59ae2dcf07d401d1f3422e35c23dd986f857d15
 
 PODFILE CHECKSUM: 1adc64c8fc6dd141d14bbb854b3d7a5899020ea6
 

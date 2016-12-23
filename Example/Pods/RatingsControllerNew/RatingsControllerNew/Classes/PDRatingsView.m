@@ -16,7 +16,7 @@
 #define FirstTime                       @"First Time"
 
 #define kUserDateRemindMeLater          @"RemindLaterDate"
-#define MAX_REMIND_ME_LATER_DIFF        60*60*24
+#define MAX_REMIND_ME_LATER_DIFF        60*60
 
 
 
@@ -34,6 +34,7 @@
     NSString *alertTitle2;
     NSString *alertMessage1;
     NSString *alertMessage2;
+    CGFloat   remindAfterDays;
 }
 
 @end
@@ -79,16 +80,25 @@ static PDRatingsView *ratings;
 
 #pragma mark - method to initialize with required values
 
--(void)initilizeWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter
 {
       appID = appId;
+    
+    if(count < 2)
+        count = 2;
+    
       countAppUsed = count;
+    
+    if(remindAfter <= 0)
+        remindAfter = 1; //default after 24 hours
+    
+    remindAfterDays = remindAfter;
     
     
     if(appName && appName.length > 0)
     {
           strAppName = appName;
-          strAppName = [  strAppName stringByAppendingString:@"App"];
+          strAppName = [  strAppName stringByAppendingString:@" App"];
     }
     else
     {
@@ -107,7 +117,24 @@ static PDRatingsView *ratings;
     NSString *useRatingsFeature = [preferences objectForKey:kUseRatingsFeatureCaption];
     if([useRatingsFeature isEqualToString:RemindMeLater])
     {
-        [self checkCountForAppUsedAndDisplayAlertOn:self];
+        id controller = [UIApplication sharedApplication].keyWindow.rootViewController;
+        UIViewController *viewController = nil;
+        if([controller isKindOfClass:[UINavigationController class]])
+        {
+            UINavigationController *navController = (UINavigationController*)controller;
+            viewController = navController.topViewController;
+        }
+        else if([controller isKindOfClass:[UITabBarController class]])
+        {
+            UITabBarController *tabController = (UITabBarController*)controller;
+            viewController = tabController.selectedViewController;
+        }
+        else
+        {
+            viewController = (UIViewController*)controller;
+        }
+       
+        [self checkCountForAppUsedAndDisplayAlertOn:viewController];
     }
 
 }
@@ -257,7 +284,7 @@ static PDRatingsView *ratings;
         // show first alert
         [self displayPromts];
     }
-    else if ([useRatingsFeature isEqualToString:RemindMeLater] && timeDiff > MAX_REMIND_ME_LATER_DIFF)
+    else if ([useRatingsFeature isEqualToString:RemindMeLater] && timeDiff > MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24)
     {
         [self displayPromts];
     }
@@ -268,7 +295,7 @@ static PDRatingsView *ratings;
             static dispatch_once_t onceToken;
             dispatch_once(&onceToken, ^{
                 // show first alert
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"To Rate/Review please use %@ App at least %ld times",strAppName,appUsedCount] message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"To Rate/Review please use %@ App at least %ld times",strAppName,countAppUsed] message:@"" preferredStyle:UIAlertControllerStyleAlert];
                 
                 
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {

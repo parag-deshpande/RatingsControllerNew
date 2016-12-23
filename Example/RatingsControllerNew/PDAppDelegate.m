@@ -38,7 +38,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [[PDRatingsView ratings]initilizeWithAppId:@"12345" appName:@"abc" countAppUsed:2];
+    [[PDRatingsView ratings]initialiseWithAppId:@"12345" appName:@"AppName" countAppUsed:2 remindAfterDays:0.5];
     
 }
 

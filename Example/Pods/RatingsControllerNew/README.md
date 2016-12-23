@@ -9,8 +9,28 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Introduction
+PDRatingsController is used to Rate the App in Appstore. Simple to integrate just add pod in your pod file, install pods and use methods described in usage section.
 
+Features :
+- Custom Alert messages 
+    - set promt titles and messages using method
+
+            #(void)setAlertMessage1:(NSString*)alertMessage
+            #(void)setAlertMessage2:(NSString*)alertMessage
+            #(void)setAlertTitle1:(NSString*)alertTitle
+            #(void)setAlertTitle2:(NSString*)alertTitle
+
+- Remind Me Later option is available
+    - set days after which user will be promted with App rate/review
+     - to set hours use mutliplier - 1/24*(number_of_hours)
+     - to set days set (number_of_days)
+
+   Reminder promt will apear when time set reached and app is launched again afterwards
+
+
+## Requirements
+ available iOS 8.0 and later
 ## Installation
 
 RatingsControllerNew is available through [CocoaPods](http://cocoapods.org). To install
@@ -20,14 +40,19 @@ it, simply add the following line to your Podfile:
 pod "RatingsControllerNew"
 ```
 
-##Usage : 
-PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified.
-Steps -
-1. import PDRatingsView
-2. Use following method where you want to initiate rating/review process.
--- [[PDRatingsView ratings]initilizeWithAppId:@"12345" appName:@"abc" countAppUsed:2];
-3. Call on Button tap /action event / where user want to display rate promts
--- [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:self];'
+##Usage 
+PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified. Default is limit is 2 i.e user must use app at least 2 times to rate
+
+Steps:
+1 import PDRatingsView
+
+2 Use following method in AppDelegate's didBecomeActiveMethod  to initiate rating/review process.
+
+        #[[PDRatingsView ratings]initialiseWithAppId:(APP_ID) appName:(APP_NAME) countAppUsed:(COUNT_TO_ALLOW_USER_RATE_APP) remindAfterDays:(NUMBER_OF_DAYS)];
+
+3 Call on Button tap /action event / where user want to display rate promts
+
+        #[[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:(ViewController_To_Display_Promt)];
 
 
 ## Author

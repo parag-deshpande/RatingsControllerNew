@@ -30,8 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)rateApp:(id)sender {
+
+
+- (IBAction)rateNow:(id)sender {
     
-    [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:self];
+     [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:self];
 }
 @end

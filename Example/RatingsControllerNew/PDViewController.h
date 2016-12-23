@@ -9,6 +9,7 @@
 @import UIKit;
 
 @interface PDViewController : UIViewController
-- (IBAction)rateApp:(id)sender;
+
+- (IBAction)rateNow:(id)sender;
 
 @end
