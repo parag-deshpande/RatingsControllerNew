@@ -42,16 +42,16 @@ pod "RatingsControllerNew"
 ##Usage 
 PDRatingsController is singleton class allows user to rate app after user uses app n number of times as specified. Default is limit is 2 i.e user must use app at least 2 times to rate
 
-    #Steps:
+    Steps:
 1 import PDRatingsView
 
 2 Use following method in AppDelegate's didBecomeActiveMethod  to initiate rating/review process.
 
- - [[PDRatingsView ratings]initialiseWithAppId:(APP_ID) appName:(APP_NAME) countAppUsed:(COUNT_TO_ALLOW_USER_RATE_APP) remindAfterDays:(NUMBER_OF_DAYS)];
+  #[[PDRatingsView ratings]initialiseWithAppId:(APP_ID) appName:(APP_NAME) countAppUsed:(COUNT_TO_ALLOW_USER_RATE_APP) remindAfterDays:(NUMBER_OF_DAYS)];
 
 3 Call on Button tap /action event / where user want to display rate promts
 
- - [[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:(ViewController_To_Display_Promt)];
+  #[[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:(ViewController_To_Display_Promt)];
 
 
 ## Author
