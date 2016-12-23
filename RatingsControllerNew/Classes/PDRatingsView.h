@@ -50,7 +50,7 @@ typedef enum : NSUInteger {
  * @return void returns void
  */
 
--(void)initilizeWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count;
+-(void)initilizeWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter;
 
 /**
  * use this method to check Max limit and display the Promts. Call this method on button tap or where you want user should rate app
