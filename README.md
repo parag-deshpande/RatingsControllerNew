@@ -45,7 +45,9 @@ PDRatingsController is singleton class allows user to rate app after user uses a
 
 Steps:
 
-1                       #[import PDRatingsView
+1  import PDRatingsView using
+
+        #import "PDRatingsView.h"
 
 2 Use following method in AppDelegate's didBecomeActiveMethod  to initiate rating/review process.
 
