@@ -44,13 +44,13 @@ typedef enum : NSUInteger {
 
 /**
  * use it after calling ratings to initialize required values
- * @param appId string - provided by apple as app id on itunnesconnect
+ * @param appId string - provided by apple as app id with itunnesconnect
  * @param appName string - name of app will  be used to display on Promt messages
  * @param count NSInteger - Max count after which user can rate the app
  * @return void returns void
  */
 
--(void)initilizeWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter;
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter;
 
 /**
  * use this method to check Max limit and display the Promts. Call this method on button tap or where you want user should rate app

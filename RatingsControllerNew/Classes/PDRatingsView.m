@@ -80,9 +80,13 @@ static PDRatingsView *ratings;
 
 #pragma mark - method to initialize with required values
 
--(void)initilizeWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter
 {
       appID = appId;
+    
+    if(count < 2)
+        count = 2;
+    
       countAppUsed = count;
     
     if(remindAfter <= 0)
