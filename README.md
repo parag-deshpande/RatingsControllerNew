@@ -10,10 +10,14 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Introduction
-PDRatingsController can be used to Rate the App. It is available after iOS 8.0.
+PDRatingsController is used to Rate the App in Appstore. Simple to integrate just add pod in your pod file, install pods and use methods described in usage section.
+This has features -
+- Customise Alert messages
+- Remind Me after days
+
 
 ## Requirements
-
+ It is available after iOS 8.0.
 ## Installation
 
 RatingsControllerNew is available through [CocoaPods](http://cocoapods.org). To install
