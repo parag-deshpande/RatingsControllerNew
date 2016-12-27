@@ -133,7 +133,6 @@ static PDRatingsView *ratings;
         {
             viewController = (UIViewController*)controller;
         }
-       
         [self checkCountForAppUsedAndDisplayAlertOn:viewController];
     }
 
@@ -257,6 +256,14 @@ static PDRatingsView *ratings;
 
 -(void)checkCountForAppUsedAndDisplayAlertOn:(UIViewController*)_viewController
 {
+    NSString *sourceString = [[NSThread callStackSymbols] objectAtIndex:1];
+    // Example: 1   UIKit                               0x00540c89 -[UIApplication _callInitializationDelegatesForURL:payload:suspended:] + 1163
+    NSCharacterSet *separatorSet = [NSCharacterSet characterSetWithCharactersInString:@" -[]+?.,"];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:[sourceString  componentsSeparatedByCharactersInSet:separatorSet]];
+    [array removeObject:@""];
+    NSLog(@"Class caller = %@", [array objectAtIndex:3]);
+    NSLog(@"Function caller = %@", [array objectAtIndex:4]);
+    
     viewController = _viewController;
     if(!appID || !viewController)
     {
@@ -280,7 +287,6 @@ static PDRatingsView *ratings;
     
     if(appUsedCount ==  countAppUsed && ![useRatingsFeature isEqualToString:RemindMeLater])
     {
-        
         // show first alert
         [self displayPromts];
     }
@@ -295,7 +301,7 @@ static PDRatingsView *ratings;
             static dispatch_once_t onceToken;
             dispatch_once(&onceToken, ^{
                 // show first alert
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"To Rate/Review please use %@ App at least %ld times",strAppName,countAppUsed] message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"To Rate/Review please use %@ at least %ld times",strAppName,countAppUsed] message:@"" preferredStyle:UIAlertControllerStyleAlert];
                 
                 
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
@@ -303,7 +309,44 @@ static PDRatingsView *ratings;
                     
                 }];
                 [alertController addAction:cancel];
+                if(viewController)
+                    [viewController presentViewController:alertController animated:YES completion:nil];
             });
+        }
+        else
+        {
+          if([useRatingsFeature isEqualToString:RemindMeLater] && (![[array objectAtIndex:3] isEqualToString:NSStringFromClass(self.class)]))
+          {
+              
+              [self displayPromts];
+
+            
+          }
+          else
+          {
+                           /* NSDate *dateUserSetRemindMeLater = [preferences objectForKey:kUserDateRemindMeLater];
+                            NSDate *currentDate = [NSDate date];
+              
+              
+                            NSTimeInterval timeDiff = [currentDate timeIntervalSinceDate:dateUserSetRemindMeLater];
+              
+                            CGFloat diffFloat = MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24 - timeDiff;
+              
+                            NSString *diff = [self stringFromTimeInterval:diffFloat];
+              
+              
+                                // show first alert
+                                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"You will be Reminded after %@ hours",diff] message:@"" preferredStyle:UIAlertControllerStyleAlert];
+              
+              
+                                UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+              
+              
+                                }];
+                                [alertController addAction:cancel];
+                                if(viewController)
+                                    [viewController presentViewController:alertController animated:YES completion:nil];*/
+          }
         }
     }
 }
@@ -335,6 +378,14 @@ static PDRatingsView *ratings;
         [ viewController presentViewController:alertController animated:YES completion:nil];
 }
 
+
+- (NSString *)stringFromTimeInterval:(NSTimeInterval)interval {
+    NSInteger ti = (NSInteger)interval;
+    NSInteger seconds = ti % 60;
+    NSInteger minutes = (ti / 60) % 60;
+    NSInteger hours = (ti / 3600);
+    return [NSString stringWithFormat:@"%02ld:%02ld:%02ld", (long)hours, (long)minutes, (long)seconds];
+}
 
 
 
