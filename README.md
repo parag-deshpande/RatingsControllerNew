@@ -51,7 +51,7 @@ Steps:
 
 2 Use following method in AppDelegate's didBecomeActiveMethod  to initiate rating/review process.
 
-        #[[PDRatingsView ratings]initialiseWithAppId:(APP_ID) appName:(APP_NAME) countAppUsed:(COUNT_TO_ALLOW_USER_RATE_APP) remindAfterDays:(NUMBER_OF_DAYS)];
+        #[[PDRatingsView ratings]initialiseWithAppId:(APP_ID) appName:(APP_NAME) countAppUsed:(COUNT_TO_ALLOW_USER_RATE_APP) remindAfterDays:(NUMBER_OF_DAYS) andPerformRateUsingActionEventOnly:(BOOL)];
 
 3 Call on Button tap /action event / where user want to display rate promts
 

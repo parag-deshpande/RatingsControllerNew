@@ -14,6 +14,7 @@
 #define RemindMeLater                   @"Remind me later"
 #define NoThanks                        @"No Thanks"
 #define FirstTime                       @"First Time"
+#define RemindMeOccured                 @"Remind Me Occured"
 
 #define kUserDateRemindMeLater          @"RemindLaterDate"
 #define MAX_REMIND_ME_LATER_DIFF        60*60
@@ -89,7 +90,7 @@ static PDRatingsView *ratings;
     if(count < 2)
         count = 2;
     
-      countAppUsed = count;
+      countAppUsed = count + 1;
     
     if(remindAfter <= 0)
         remindAfter = 1; //default after 24 hours
@@ -293,10 +294,17 @@ static PDRatingsView *ratings;
     
     NSTimeInterval timeDiff = [currentDate timeIntervalSinceDate:dateUserSetRemindMeLater];
     
-    if((appUsedCount ==  countAppUsed && ![useRatingsFeature isEqualToString:RemindMeLater]) || ([useRatingsFeature isEqualToString:RemindMeLater] && timeDiff > MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24))
+    if((appUsedCount  ==  countAppUsed  && ![useRatingsFeature isEqualToString:RemindMeLater]) || ([useRatingsFeature isEqualToString:RemindMeLater] && timeDiff > MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24))
     {
         // show first alert
         [self displayPromts];
+        if(timeDiff > MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24) // remind me occured
+        {
+            //change value for key "kUseRatingsFeatureCaption" to "RemindMeOccured"
+            [preferences setObject:RemindMeOccured forKey:kUseRatingsFeatureCaption];
+            [preferences synchronize];
+        }
+        
     }
     else
     {
@@ -305,7 +313,7 @@ static PDRatingsView *ratings;
             static dispatch_once_t onceToken;
             dispatch_once(&onceToken, ^{
                 // show first alert
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"To Rate/Review please use %@ at least %ld times",strAppName,countAppUsed] message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"To Rate/Review please use %@ at least %ld times",strAppName,countAppUsed-1] message:@"" preferredStyle:UIAlertControllerStyleAlert];
                 
                 
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
