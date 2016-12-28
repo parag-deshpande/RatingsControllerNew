@@ -47,15 +47,17 @@ typedef enum : NSUInteger {
  * @param appId string - provided by apple as app id with itunnesconnect
  * @param appName string - name of app will  be used to display on Promt messages
  * @param count NSInteger - Max count after which user can rate the app
- * @return void returns void
+ * @param remindAfter CGFloat - remind me after n days, to set hours use multiplier 1/24 *(number_of_hours)
+ * @param isRateUsingActionEvent - Setting "true" will show the promt only on action event or when when remind me feature is enabled. In this case need to call method checkCountForAppUsedAndDisplayAlertOn: on action event. Ohterwise called on appDidbecomeActive
+ * @return void
  */
 
--(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter;
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter andPerformRateUsingActionEventOnly:(BOOL)isRateUsingActionEvent;
 
 /**
  * use this method to check Max limit and display the Promts. Call this method on button tap or where you want user should rate app
  * @param viewController UIViewController where you can display promts
- * @return void returns void
+ * @return void
  */
 -(void)checkCountForAppUsedAndDisplayAlertOn:(UIViewController*)_viewController;
 
@@ -63,7 +65,7 @@ typedef enum : NSUInteger {
 /**
  * set alert message 1 for first promt like "Do you love the app" with option yes/no
  * @param alertMessage NSString alert message
- * @return void returns void
+ * @return void    
  */
 -(void)setAlertMessage1:(NSString*)alertMessage;
 
@@ -72,7 +74,7 @@ typedef enum : NSUInteger {
 /**
  * set alert message 2 for second promt like "Are you excited to rate app" with option Rate/Remind Me Later/ No Thanks
  * @param alertMessage NSString alert message
- * @return void returns void
+ * @return void    
  */
 -(void)setAlertMessage2:(NSString*)alertMessage;
 
@@ -81,7 +83,7 @@ typedef enum : NSUInteger {
 /**
  * set alert title 1 for First promt like "select option"
  * @param alertTitle NSString alert title
- * @return void returns void
+ * @return void    
  */
 -(void)setAlertTitle1:(NSString*)alertTitle;
 
@@ -89,7 +91,7 @@ typedef enum : NSUInteger {
 /**
  * set alert title 2 for second promt
  * @param alertTitle NSString alert title
- * @return void returns void
+ * @return void    
  */
 -(void)setAlertTitle2:(NSString*)alertTitle;
 

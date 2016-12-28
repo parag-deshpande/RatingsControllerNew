@@ -35,6 +35,7 @@
     NSString *alertMessage1;
     NSString *alertMessage2;
     CGFloat   remindAfterDays;
+    BOOL      isRateUsingActionEvent;
 }
 
 @end
@@ -80,8 +81,9 @@ static PDRatingsView *ratings;
 
 #pragma mark - method to initialize with required values
 
--(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter andPerformRateUsingActionEventOnly:(BOOL)_isRateUsingActionEvent
 {
+      isRateUsingActionEvent = _isRateUsingActionEvent;
       appID = appId;
     
     if(count < 2)
@@ -115,7 +117,7 @@ static PDRatingsView *ratings;
     
     
     NSString *useRatingsFeature = [preferences objectForKey:kUseRatingsFeatureCaption];
-    if([useRatingsFeature isEqualToString:RemindMeLater])
+    if([useRatingsFeature isEqualToString:RemindMeLater] || _isRateUsingActionEvent == NO)
     {
         id controller = [UIApplication sharedApplication].keyWindow.rootViewController;
         UIViewController *viewController = nil;
@@ -236,6 +238,8 @@ static PDRatingsView *ratings;
     
     UIAlertAction* noThanks = [UIAlertAction actionWithTitle:@"No Thanks" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
+        NSInteger appUsedCount = 0;
+        [  preferences setInteger:appUsedCount forKey:kAppUsedCount];
         [ preferences setObject:NoThanks forKey:kUseRatingsFeatureCaption];
         [ preferences synchronize];
         
@@ -256,13 +260,17 @@ static PDRatingsView *ratings;
 
 -(void)checkCountForAppUsedAndDisplayAlertOn:(UIViewController*)_viewController
 {
+    NSMutableArray *array = nil;
+    if(isRateUsingActionEvent)
+    {
     NSString *sourceString = [[NSThread callStackSymbols] objectAtIndex:1];
     // Example: 1   UIKit                               0x00540c89 -[UIApplication _callInitializationDelegatesForURL:payload:suspended:] + 1163
     NSCharacterSet *separatorSet = [NSCharacterSet characterSetWithCharactersInString:@" -[]+?.,"];
-    NSMutableArray *array = [NSMutableArray arrayWithArray:[sourceString  componentsSeparatedByCharactersInSet:separatorSet]];
+    array = [NSMutableArray arrayWithArray:[sourceString  componentsSeparatedByCharactersInSet:separatorSet]];
     [array removeObject:@""];
     NSLog(@"Class caller = %@", [array objectAtIndex:3]);
     NSLog(@"Function caller = %@", [array objectAtIndex:4]);
+    }
     
     viewController = _viewController;
     if(!appID || !viewController)
@@ -285,13 +293,9 @@ static PDRatingsView *ratings;
     
     NSTimeInterval timeDiff = [currentDate timeIntervalSinceDate:dateUserSetRemindMeLater];
     
-    if(appUsedCount ==  countAppUsed && ![useRatingsFeature isEqualToString:RemindMeLater])
+    if((appUsedCount ==  countAppUsed && ![useRatingsFeature isEqualToString:RemindMeLater]) || ([useRatingsFeature isEqualToString:RemindMeLater] && timeDiff > MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24))
     {
         // show first alert
-        [self displayPromts];
-    }
-    else if ([useRatingsFeature isEqualToString:RemindMeLater] && timeDiff > MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24)
-    {
         [self displayPromts];
     }
     else
@@ -306,7 +310,6 @@ static PDRatingsView *ratings;
                 
                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
                     
-                    
                 }];
                 [alertController addAction:cancel];
                 if(viewController)
@@ -315,38 +318,36 @@ static PDRatingsView *ratings;
         }
         else
         {
-          if([useRatingsFeature isEqualToString:RemindMeLater] && (![[array objectAtIndex:3] isEqualToString:NSStringFromClass(self.class)]))
-          {
-              
-              [self displayPromts];
-
-            
-          }
-          else
-          {
-                           /* NSDate *dateUserSetRemindMeLater = [preferences objectForKey:kUserDateRemindMeLater];
-                            NSDate *currentDate = [NSDate date];
-              
-              
-                            NSTimeInterval timeDiff = [currentDate timeIntervalSinceDate:dateUserSetRemindMeLater];
-              
-                            CGFloat diffFloat = MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24 - timeDiff;
-              
-                            NSString *diff = [self stringFromTimeInterval:diffFloat];
-              
-              
-                                // show first alert
-                                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"You will be Reminded after %@ hours",diff] message:@"" preferredStyle:UIAlertControllerStyleAlert];
-              
-              
-                                UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-              
-              
-                                }];
-                                [alertController addAction:cancel];
-                                if(viewController)
-                                    [viewController presentViewController:alertController animated:YES completion:nil];*/
-          }
+            if([useRatingsFeature isEqualToString:RemindMeLater] && (![[array objectAtIndex:3] isEqualToString:NSStringFromClass(self.class)]) && isRateUsingActionEvent)
+            {
+                [self displayPromts];
+        
+            }
+            else
+            {
+                /* NSDate *dateUserSetRemindMeLater = [preferences objectForKey:kUserDateRemindMeLater];
+                 NSDate *currentDate = [NSDate date];
+                 
+                 
+                 NSTimeInterval timeDiff = [currentDate timeIntervalSinceDate:dateUserSetRemindMeLater];
+                 
+                 CGFloat diffFloat = MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24 - timeDiff;
+                 
+                 NSString *diff = [self stringFromTimeInterval:diffFloat];
+                 
+                 
+                 // show first alert
+                 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"You will be Reminded after %@ hours",diff] message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                 
+                 
+                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+                 
+                 
+                 }];
+                 [alertController addAction:cancel];
+                 if(viewController)
+                 [viewController presentViewController:alertController animated:YES completion:nil];*/
+            }
         }
     }
 }
@@ -370,7 +371,9 @@ static PDRatingsView *ratings;
     
     UIAlertAction* no = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
-        
+        NSInteger appUsedCount = 0;
+        [  preferences setInteger:appUsedCount forKey:kAppUsedCount];
+        [  preferences synchronize];
     }];
     [alertController addAction:no];
     
