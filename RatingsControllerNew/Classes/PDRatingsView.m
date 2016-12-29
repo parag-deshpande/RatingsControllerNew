@@ -320,8 +320,8 @@ static PDRatingsView *ratings;
                     
                 }];
                 [alertController addAction:cancel];
-                if(viewController)
-                    [viewController presentViewController:alertController animated:YES completion:nil];
+               // if(viewController)
+                  //  [viewController presentViewController:alertController animated:YES completion:nil];
             });
         }
         else
