@@ -48,11 +48,10 @@ typedef enum : NSUInteger {
  * @param appName string - name of app will  be used to display on Promt messages
  * @param count NSInteger - Max count after which user can rate the app
  * @param remindAfter CGFloat - remind me after n days, to set hours use multiplier 1/24 *(number_of_hours)
- * @param isRateUsingActionEvent - Setting "true" will show the promt only on action event or when when remind me feature is enabled. In this case need to call method checkCountForAppUsedAndDisplayAlertOn: on action event. Ohterwise called on appDidbecomeActive
  * @return void
  */
 
--(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter andPerformRateUsingActionEventOnly:(BOOL)isRateUsingActionEvent;
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter;
 
 /**
  * use this method to check Max limit and display the Promts. Call this method on button tap or where you want user should rate app

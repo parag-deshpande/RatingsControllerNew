@@ -36,7 +36,6 @@
     NSString *alertMessage1;
     NSString *alertMessage2;
     CGFloat   remindAfterDays;
-    BOOL      isRateUsingActionEvent;
 }
 
 @end
@@ -82,9 +81,8 @@ static PDRatingsView *ratings;
 
 #pragma mark - method to initialize with required values
 
--(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter andPerformRateUsingActionEventOnly:(BOOL)_isRateUsingActionEvent
+-(void)initialiseWithAppId:(NSString*)appId appName:(NSString*)appName countAppUsed:(NSInteger)count remindAfterDays:(CGFloat)remindAfter
 {
-      isRateUsingActionEvent = _isRateUsingActionEvent;
       appID = appId;
     
     if(count < 2)
@@ -92,7 +90,7 @@ static PDRatingsView *ratings;
     
       countAppUsed = count + 1;
     
-    if(remindAfter <= 0)
+    if(remindAfter <= 0.0)
         remindAfter = 1; //default after 24 hours
     
     remindAfterDays = remindAfter;
@@ -117,27 +115,27 @@ static PDRatingsView *ratings;
     }
     
     
-    NSString *useRatingsFeature = [preferences objectForKey:kUseRatingsFeatureCaption];
-    if([useRatingsFeature isEqualToString:RemindMeLater] || _isRateUsingActionEvent == NO)
-    {
-        id controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-        UIViewController *viewController = nil;
-        if([controller isKindOfClass:[UINavigationController class]])
-        {
-            UINavigationController *navController = (UINavigationController*)controller;
-            viewController = navController.topViewController;
-        }
-        else if([controller isKindOfClass:[UITabBarController class]])
-        {
-            UITabBarController *tabController = (UITabBarController*)controller;
-            viewController = tabController.selectedViewController;
-        }
-        else
-        {
-            viewController = (UIViewController*)controller;
-        }
-        [self checkCountForAppUsedAndDisplayAlertOn:viewController];
-    }
+//    NSString *useRatingsFeature = [preferences objectForKey:kUseRatingsFeatureCaption];
+//    if([useRatingsFeature isEqualToString:RemindMeLater] || _isRateUsingActionEvent == NO)
+//    {
+//        id controller = [UIApplication sharedApplication].keyWindow.rootViewController;
+//        UIViewController *viewController = nil;
+//        if([controller isKindOfClass:[UINavigationController class]])
+//        {
+//            UINavigationController *navController = (UINavigationController*)controller;
+//            viewController = navController.topViewController;
+//        }
+//        else if([controller isKindOfClass:[UITabBarController class]])
+//        {
+//            UITabBarController *tabController = (UITabBarController*)controller;
+//            viewController = tabController.selectedViewController;
+//        }
+//        else
+//        {
+//            viewController = (UIViewController*)controller;
+//        }
+//        [self checkCountForAppUsedAndDisplayAlertOn:viewController];
+//    }
 
 }
 
@@ -261,18 +259,6 @@ static PDRatingsView *ratings;
 
 -(void)checkCountForAppUsedAndDisplayAlertOn:(UIViewController*)_viewController
 {
-    NSMutableArray *array = nil;
-    if(isRateUsingActionEvent)
-    {
-    NSString *sourceString = [[NSThread callStackSymbols] objectAtIndex:1];
-    // Example: 1   UIKit                               0x00540c89 -[UIApplication _callInitializationDelegatesForURL:payload:suspended:] + 1163
-    NSCharacterSet *separatorSet = [NSCharacterSet characterSetWithCharactersInString:@" -[]+?.,"];
-    array = [NSMutableArray arrayWithArray:[sourceString  componentsSeparatedByCharactersInSet:separatorSet]];
-    [array removeObject:@""];
-    NSLog(@"Class caller = %@", [array objectAtIndex:3]);
-    NSLog(@"Function caller = %@", [array objectAtIndex:4]);
-    }
-    
     viewController = _viewController;
     if(!appID || !viewController)
     {
@@ -326,14 +312,14 @@ static PDRatingsView *ratings;
         }
         else
         {
-            if([useRatingsFeature isEqualToString:RemindMeLater] && (![[array objectAtIndex:3] isEqualToString:NSStringFromClass(self.class)]) && isRateUsingActionEvent)
+           /* if([useRatingsFeature isEqualToString:RemindMeLater] && (![[array objectAtIndex:3] isEqualToString:NSStringFromClass(self.class)]) && isRateUsingActionEvent)
             {
                 [self displayPromts];
         
             }
             else
             {
-                /* NSDate *dateUserSetRemindMeLater = [preferences objectForKey:kUserDateRemindMeLater];
+                 NSDate *dateUserSetRemindMeLater = [preferences objectForKey:kUserDateRemindMeLater];
                  NSDate *currentDate = [NSDate date];
                  
                  
@@ -354,8 +340,8 @@ static PDRatingsView *ratings;
                  }];
                  [alertController addAction:cancel];
                  if(viewController)
-                 [viewController presentViewController:alertController animated:YES completion:nil];*/
-            }
+                 [viewController presentViewController:alertController animated:YES completion:nil];
+            }*/
         }
     }
 }
