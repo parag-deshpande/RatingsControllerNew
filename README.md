@@ -57,6 +57,9 @@ Steps:
 
         #[[PDRatingsView ratings] checkCountForAppUsedAndDisplayAlertOn:(ViewController_To_Display_Promt)];
 
+4. Call where Update version appears or where you want the appcount used to reset
+        #[[PDRatingsView ratings] resetSessionCountToOriginal]
+
 
 ## Author
 

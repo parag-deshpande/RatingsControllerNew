@@ -15,6 +15,7 @@
 #define NoThanks                        @"No Thanks"
 #define FirstTime                       @"First Time"
 #define RemindMeOccured                 @"Remind Me Occured"
+#define RatingPerformed                 @"Rating Performed"
 
 #define kUserDateRemindMeLater          @"RemindLaterDate"
 #define MAX_REMIND_ME_LATER_DIFF        60*60
@@ -113,30 +114,6 @@ static PDRatingsView *ratings;
         [  preferences setInteger:appUsedCount forKey:kAppUsedCount];
         [  preferences synchronize];
     }
-    
-    
-//    NSString *useRatingsFeature = [preferences objectForKey:kUseRatingsFeatureCaption];
-//    if([useRatingsFeature isEqualToString:RemindMeLater] || _isRateUsingActionEvent == NO)
-//    {
-//        id controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-//        UIViewController *viewController = nil;
-//        if([controller isKindOfClass:[UINavigationController class]])
-//        {
-//            UINavigationController *navController = (UINavigationController*)controller;
-//            viewController = navController.topViewController;
-//        }
-//        else if([controller isKindOfClass:[UITabBarController class]])
-//        {
-//            UITabBarController *tabController = (UITabBarController*)controller;
-//            viewController = tabController.selectedViewController;
-//        }
-//        else
-//        {
-//            viewController = (UIViewController*)controller;
-//        }
-//        [self checkCountForAppUsedAndDisplayAlertOn:viewController];
-//    }
-
 }
 
 #pragma mark - methods to set alert title and messages
@@ -200,21 +177,23 @@ static PDRatingsView *ratings;
         if([[UIDevice currentDevice].systemVersion floatValue] >= 10.0)
         {
         [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
-            if(success)
-            {
-                [ preferences setObject:NoThanks forKey:kUseRatingsFeatureCaption];
+            
+                NSInteger appUsedCount = 22;
+                [ preferences setInteger:appUsedCount forKey:kAppUsedCount];
+                [ preferences setObject:RatingPerformed forKey:kUseRatingsFeatureCaption];
                 [ preferences synchronize];
-            }
+            
         }];
         }
         else
         {
             BOOL success = [[UIApplication sharedApplication] openURL:url];
-            if(success)
-            {
-                [ preferences setObject:NoThanks forKey:kUseRatingsFeatureCaption];
+            
+                NSInteger appUsedCount = 22;
+                [  preferences setInteger:appUsedCount forKey:kAppUsedCount];
+                [ preferences setObject:RatingPerformed forKey:kUseRatingsFeatureCaption];
                 [ preferences synchronize];
-            }
+            
         }
         
     }];
@@ -290,7 +269,6 @@ static PDRatingsView *ratings;
             [preferences setObject:RemindMeOccured forKey:kUseRatingsFeatureCaption];
             [preferences synchronize];
         }
-        
     }
     else
     {
@@ -312,36 +290,7 @@ static PDRatingsView *ratings;
         }
         else
         {
-           /* if([useRatingsFeature isEqualToString:RemindMeLater] && (![[array objectAtIndex:3] isEqualToString:NSStringFromClass(self.class)]) && isRateUsingActionEvent)
-            {
-                [self displayPromts];
-        
-            }
-            else
-            {
-                 NSDate *dateUserSetRemindMeLater = [preferences objectForKey:kUserDateRemindMeLater];
-                 NSDate *currentDate = [NSDate date];
-                 
-                 
-                 NSTimeInterval timeDiff = [currentDate timeIntervalSinceDate:dateUserSetRemindMeLater];
-                 
-                 CGFloat diffFloat = MAX_REMIND_ME_LATER_DIFF*remindAfterDays*24 - timeDiff;
-                 
-                 NSString *diff = [self stringFromTimeInterval:diffFloat];
-                 
-                 
-                 // show first alert
-                 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"You will be Reminded after %@ hours",diff] message:@"" preferredStyle:UIAlertControllerStyleAlert];
-                 
-                 
-                 UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-                 
-                 
-                 }];
-                 [alertController addAction:cancel];
-                 if(viewController)
-                 [viewController presentViewController:alertController animated:YES completion:nil];
-            }*/
+           
         }
     }
 }
@@ -382,6 +331,15 @@ static PDRatingsView *ratings;
     NSInteger minutes = (ti / 60) % 60;
     NSInteger hours = (ti / 3600);
     return [NSString stringWithFormat:@"%02ld:%02ld:%02ld", (long)hours, (long)minutes, (long)seconds];
+}
+
+
+-(void)resetSessionCountToOriginal
+{
+    NSInteger appUsedCount = 0;
+    [ preferences setInteger:appUsedCount forKey:kAppUsedCount];
+    [ preferences setObject:NoThanks forKey:kUseRatingsFeatureCaption];
+    [ preferences synchronize];
 }
 
 

@@ -94,4 +94,11 @@ typedef enum : NSUInteger {
  */
 -(void)setAlertTitle2:(NSString*)alertTitle;
 
+
+/**
+ * reset count for app used session
+ * @return void
+ */
+-(void)resetSessionCountToOriginal;
+
 @end
