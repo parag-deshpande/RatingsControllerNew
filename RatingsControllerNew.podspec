@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RatingsControllerNew'
-  s.version          = '0.2.7'
+  s.version          = '0.2.8'
   s.summary          = 'Allows user to Rate/Review app on AppStore using RatingsControllerNew.'
 
 

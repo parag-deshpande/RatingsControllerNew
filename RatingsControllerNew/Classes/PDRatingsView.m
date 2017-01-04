@@ -174,25 +174,23 @@ static PDRatingsView *ratings;
         NSURL *url =  [NSURL URLWithString:[NSString stringWithFormat:@"itms-apps://itunes.apple.com/%@%ld",([[UIDevice currentDevice].systemVersion floatValue] <= 7.0f)? iOS7AppStoreURLFormat: iOSAppStoreURLFormat, (long)appID.integerValue]];
         
         
+        NSInteger appUsedCount = 0;
+        [ preferences setInteger:appUsedCount forKey:kAppUsedCount];
+        [ preferences setObject:RatingPerformed forKey:kUseRatingsFeatureCaption];
+        [ preferences synchronize];
+        
         if([[UIDevice currentDevice].systemVersion floatValue] >= 10.0)
         {
-        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
+            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
             
-                NSInteger appUsedCount = 22;
-                [ preferences setInteger:appUsedCount forKey:kAppUsedCount];
-                [ preferences setObject:RatingPerformed forKey:kUseRatingsFeatureCaption];
-                [ preferences synchronize];
+                
             
         }];
+            
         }
         else
         {
             BOOL success = [[UIApplication sharedApplication] openURL:url];
-            
-                NSInteger appUsedCount = 22;
-                [  preferences setInteger:appUsedCount forKey:kAppUsedCount];
-                [ preferences setObject:RatingPerformed forKey:kUseRatingsFeatureCaption];
-                [ preferences synchronize];
             
         }
         
